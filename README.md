@@ -9,7 +9,7 @@ image.png
 
 ## Links
 
-GitHub pages url: https://michaels32.github.io/Portfolio/  
+GitHub pages url: https://michaels32.github.io/Password-Generator/  
 GitHub repository url: https://github.com/MichaelS32/Password-Generator 
 
 ## License
