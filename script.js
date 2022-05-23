@@ -1,5 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+// Arrays for different character types
 const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 const specialCharacters = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "{", "}", "~", "?", "<", ">", "/"];
@@ -15,8 +17,10 @@ function writePassword() {
 
 }
 
+// Function to randomly create a password based on how the user answers the prompts
 function generatePassword() {
-var passwordLength = window.prompt("Please enter the number of characters you want your new password to be. It may be between 8 and 128 characters");
+// Allows user to set desired length of password between 8 and 128 characters
+  var passwordLength = window.prompt("Please enter the number of characters you want your new password to be. It may be between 8 and 128 characters");
 if(!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
   return alert("Invalid Response, please try again.");
 }
@@ -41,6 +45,7 @@ if(useSpecialCharacters) {
   mainArray = mainArray.concat(specialCharacters)
 }
 
+// Selects random character from main array then loops this process for the password length given by the user
 for(i = 0; i < passwordLength; i++) {
   randomPassword += mainArray[Math.floor(Math.random() * (mainArray.length))];
   console.log(Math.floor(Math.random() * (mainArray.length)));
