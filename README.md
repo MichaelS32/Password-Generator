@@ -5,7 +5,7 @@ This password generator was designed to give a unique random password based on v
 
 ## Image
 
-image.png
+![image](https://user-images.githubusercontent.com/101466347/169731118-e164be09-7697-4e1b-babe-8e85f26e8e6a.png)
 
 ## Links
 
