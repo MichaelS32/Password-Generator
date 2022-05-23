@@ -20,18 +20,22 @@ var passwordLength = window.prompt("Please enter the number of characters you wa
 if(!passwordLength || passwordLength <= 7 || passwordLength >= 129) {
   return alert("Invalid Response, please try again.");
 }
+// Prompts if user wants lowercase in the password, true adds it to mainArray
 var useLowerCase = confirm("Do you want your new password to include lower case letters?");
 if(useLowerCase) {
   mainArray = mainArray.concat(lowerCase);
 }
+// Prompts if user wants uppercase in the password, true adds it to mainArray
 var useUpperCase = confirm("Do you want your new password to include uppercase letters?");
 if(useUpperCase) {
   mainArray = mainArray.concat(upperCase);
 }
+// Prompts if user wants numbers in the password, true adds it to mainArray
 var useNumbers = confirm("Do you want your new password to include numbers?");
 if(useNumbers) {
   mainArray = mainArray.concat(numbers);
 }
+// Prompts if user wants special characters in the password, true adds it to mainArray
 var useSpecialCharacters = window.confirm("Do you want your new password to include special characters?");
 if(useSpecialCharacters) {
   mainArray = mainArray.concat(specialCharacters)
