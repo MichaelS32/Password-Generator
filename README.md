@@ -1,7 +1,7 @@
 # Password Generator
 ## Description
 
-This password generator was designed to give a unique random password based on variables that are prompted to the user upon clicking the generate password button. Prompts will ask you to hit okay to confirm if you would like to use a specific character, an example being special characters. If you don't want to use that specific character type then simply hit cancel
+This password generator was designed to give a unique random password based on variables that are prompted to the user upon clicking the generate password button. Prompts will ask you to hit okay to confirm if you would like to use a specific characters, an example being special characters. If you don't want to use that specific character type then simply hit cancel. Based on the users answers the function will give a password with the desired character types and length.
 
 ## Image
 
